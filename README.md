@@ -1,6 +1,10 @@
 # ethbtc
 
-This script makes it easy to trade ETH/BTC using the FTX [leveraged tokens](https://ftx.com/markets/leveragedtokens) ETHBULL (3x long ETH) and BEAR (3x short BTC).
+This simple Deno script makes it easy to trade ETH/BTC using the FTX [leveraged tokens](https://ftx.com/markets/leveragedtokens) ETHBULL (3x long ETH) and BEAR (3x short BTC).
+
+## Prerequisites
+
+Install [Deno](https://deno.land/) and fill in the example `.env` file with your FTX API credentials.
 
 ## Buying or selling ETH/BTC
 
