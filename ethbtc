@@ -77,12 +77,12 @@ if(ACTION === "balance") {
   console.log(await placeOrder(
     "ETHBULL/USD",
     SIDE,
-    AMOUNT / (SIDE === "buy" ? ethbull_price.ask : ethbull_price.bid)
+    (AMOUNT / 2) / (SIDE === "buy" ? ethbull_price.ask : ethbull_price.bid)
   ))
   console.log(await placeOrder(
     "BEAR/USD",
-   SIDE,
-   AMOUNT / (SIDE === "buy" ? bear_price.ask : bear_price.bid)
+    SIDE,
+    (AMOUNT / 2) / (SIDE === "buy" ? bear_price.ask : bear_price.bid)
   ))
 } else {
   console.log("Enter an action: 'trade' or 'balance'")
